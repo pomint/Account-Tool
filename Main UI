@@ -1,0 +1,23 @@
+<Window x:Class="Account_Tool_2._1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Account_Tool_2._0"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Header1" Content="Enter Username Here" HorizontalAlignment="Left" Margin="29,27,0,0" VerticalAlignment="Top" />
+        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="23" Margin="31,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" BorderBrush="Gray" BorderThickness="2" />
+        <Button x:Name="Checkuser" Content="Check user" HorizontalAlignment="Left" Margin="318,27,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="Checkuser_Click" />
+        <Button x:Name="UnlockAccount" Content="Unlock User" HorizontalAlignment="Left" Margin="565,26,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="UnlockAccount_Click" />
+        <Button x:Name="EnableUser" Content="Enable User" HorizontalAlignment="Left" Margin="444,104,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="EnableUser_Click" />
+        <Button x:Name="DisableUser" Content="Disable User" HorizontalAlignment="Left" Margin="444,26,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="DisableUser_Click" />
+        <Button x:Name="ExitTool" Content="Exit" HorizontalAlignment="Left" Margin="565,104,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="ExitTool_Click" />
+        <Label x:Name="Header1_Copy" Content="Enter New Password Here" HorizontalAlignment="Left" Margin="31,104,0,0" VerticalAlignment="Top" />
+        <PasswordBox x:Name="NewPassword" HorizontalAlignment="Left" Height="23" Margin="31,135,0,0"  VerticalAlignment="Top" Width="266" PasswordChar="*" BorderBrush="Gray" BorderThickness="2" />
+        <Button x:Name="SetPassword" Content="Set Password" HorizontalAlignment="Left" Margin="318,104,0,0" VerticalAlignment="Top" Width="100" Height="54" Click="SetPassword_Click" />
+        <Label Content="Password Requirements:&#xD;&#xA;- min 12 Characters&#xD;&#xA;- Alphanumeric&#xD;&#xA;- Must have at least a Number, Symbol, &#xD;&#xA;Uppercase and Lowercase Character&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" />
+        <Label Content="Note: &#xD;&#xA;Perform a &quot;Check User&quot; to confirm if user exist before performing&#xD;&#xA;other functions" HorizontalAlignment="Left" Margin="318,163,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="Red" />
+    </Grid>
+</Window>
