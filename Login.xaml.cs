@@ -15,7 +15,7 @@ namespace Account_Tool_2._1
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            string StoredPassword = "!QAZ2wsx#EDC";
+            string StoredPassword = "Password";
             if (StoredPassword == Password.Password)
             {
                 MainWindow window = new MainWindow();
